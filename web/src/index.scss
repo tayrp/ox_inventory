@@ -1,22 +1,19 @@
-// Variables for Colors and Fonts
-$mainColor: #1a1a1a; // Dark primary background color
-$textColor: #e0e0e0; // Light gray text for readability
-$highlightColor: #ff4444; // Highlight color for interactive elements
+$mainColor: #1a1a1a;
+$textColor: #e0e0e0;
+$highlightColor: #ff4444;
 $mainFont: 'Roboto', sans-serif;
 
-$secondaryColor: #33343F; // Secondary background color for buttons and slots
-$secondaryColorHighlight: #2e2e38; // Hover/active background color
+$secondaryColor: #33343F;
+$secondaryColorHighlight: #2e2e38;
 $secondaryColorLight: rgba(255, 255, 255, 0.1);
 $secondaryColorDark: rgba(12, 12, 12, 0.8);
 
-// Layout Variables
 $gridCols: 5;
 $gridRows: 5;
 $gridSize: 8vh;
 $gridGap: 2px;
 $containerSize: calc(#{$gridRows} * #{$gridSize + 0.22vh} + #{$gridRows} * #{$gridGap});
 
-// Global Styling
 body {
   margin: 0;
   font-family: $mainFont, sans-serif;
@@ -45,7 +42,6 @@ p {
   font-family: $mainFont;
 }
 
-// Inventory Wrapper
 .app-wrapper {
   height: 100%;
   width: 100%;
@@ -64,7 +60,6 @@ p {
   gap: 20px;
 }
 
-// Context Menu
 .context-menu-list {
   min-width: 200px;
   background-color: $mainColor;
@@ -87,7 +82,6 @@ p {
   }
 }
 
-// Tooltip Styling
 .tooltip-wrapper {
   pointer-events: none;
   background-color: $mainColor;
@@ -104,7 +98,6 @@ p {
   font-weight: 400;
 }
 
-// Inventory Grid and Slot
 .inventory-grid-wrapper {
   display: flex;
   flex-direction: column;
@@ -151,7 +144,6 @@ p {
   font-size: 12px;
 }
 
-// Clothing Buttons Styling
 .clothing-buttons {
   display: flex;
   flex-direction: column;
@@ -182,7 +174,6 @@ p {
   }
 }
 
-// Hotbar Styling
 .hotbar-container {
   display: flex;
   align-items: center;
@@ -200,7 +191,6 @@ p {
   height: $gridSize;
 }
 
-// Item Notifications
 .item-notification-container {
   display: flex;
   overflow-x: scroll;
@@ -219,7 +209,6 @@ p {
   font-size: 11px;
 }
 
-// Transition Animations
 .transition-fade-enter,
 .transition-fade-exit-active {
   opacity: 0;
