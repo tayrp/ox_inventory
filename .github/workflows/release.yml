@@ -82,11 +82,11 @@ jobs:
         uses: "marvinpinto/action-automatic-releases@v1.2.1"
         id: auto_release
         with:
-          repo_token: "${{ secrets.TOKEN }}"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
           title: "${{ env.RELEASE_VERSION }}"
           prerelease: false
           files: ox_inventory.zip
 
         env:
           CI: false
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
